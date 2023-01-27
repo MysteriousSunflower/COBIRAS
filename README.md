@@ -10,7 +10,7 @@ This repository contains the testbed setup accompanying the paper **COBIRAS: Max
   
 ## Terminology
 
-The paper uses a slightly different terminology from the code in this repository. This section lists the correspondences Paper <--> Repository
+The paper uses a slightly different terminology from the code in this repository. This section lists the correspondences: Paper <--> Repository
 
 - DASH Systems
   - FewReps (DASH system with a discrete set of 6 representations) <--> default
