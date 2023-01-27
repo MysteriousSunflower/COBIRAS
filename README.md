@@ -41,7 +41,7 @@ Change directory to `DASH-setup/` and execute the `exec_setup.sh` script:
   cd DASH-setup
   bash exec_setup.sh
   ```
-The script will create three Docker containers via the `docker-compose.yml` file and the Dockerfiles in the `client/`, `netem/` and `server/` directories. Then it will start playing the Tears Of Steel video on different network traces for different ABR algorithms and streaming configurations. A run with the ToS video on a network trace takes about 15 minutes, logged metrics will be saved in the `logs/` directory, grouped by the ABR algorithm used.
+The script will create three Docker containers via the `docker-compose.yml` file and the Dockerfiles in the `client/`, `netem/` and `server/` directories. Then, it will start playing the Tears Of Steel video on different network traces for different ABR algorithms and streaming configurations. A run with the ToS video on a network trace takes about 15 minutes, logged metrics will be saved in the `logs/` directory, grouped by the ABR algorithm used.
 
 ## Configuration
 
