@@ -17,7 +17,7 @@ The paper uses a slightly different terminology from the code in this repository
   - ManyReps (DASH system with a discrete set of 49 representations, used to approximate a continuous bit rate slide, representations are pre-encoded) <--> pre
   - ManyReps JITE (DASH system with a discrete set of 49 representations, used to approximate a continuous bit rate slide, representations are encoded just-in-time during runtime) <--> runtime
 - ABR algorithms
-  - MinOff (ABR algorithm for minimizing off-phases) <--> customBufferRule
+  - MinOff (ABR algorithm for minimizing off-phases) <--> custom (abrCustom/customBufferRule)
 
 ## Build and Run Instructions
 
