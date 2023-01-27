@@ -49,6 +49,7 @@ The script will create three Docker containers via the `docker-compose.yml` file
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
 | Network traces               | `DASH-setup/netem/data/trace_files`                             |
+| Video files                  | `DASH-setup/server/data/public/videos/`                         |
 | dash.js player configuration | `DASH-setup/server/data/public/javascripts/player.js`           |
 | Code of ABR MinOff           | `DASH-setup/server/data/public/javascripts/customBufferRule.js` |
 | node.js web server           | `DASH-setup/server/data/app.js`                                 |
@@ -61,7 +62,8 @@ While in the current state this setup renders the test data from the mentioned p
 |                                  |                                                                                                                                                                                                                                                                                                                   |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Change network traces            | Edit path of network traces in `exec_setup.sh:15`                                                                                                                                                                                                                                                                 |
+| Use different video              | Create DASH segments for all video representations. Put them in a directory in `DASH-setup/server/data/public/videos/`. Edit video list in `exec_setup.sh:17`. If you want to use JITE, the node.js server must be adjusted accordingly. Depending on our manifest structure, other adjustments might be required |
 | Only run speciffic/different ABR | Edit ABR list in `exec_setup.sh:18`                                                                                                                                                                                                                                                                               |
 | Run only JITE                    | Edit video list in `exec_setup.sh:17`. JITE can be identified by `_runtime` in the video name. `_pre` refers to ManyReps (perfect JITE, all representations are pre-encoded)                                                                                                                                                      |
-| Use different video              | Create DASH segments for all video representations. Put them in a directory in `DASH-setup/server/data/public/videos/`. Edit video list in `exec_setup.sh:17`. If you want to use JITE, the node.js server must be adjusted accordingly. Depending on our manifest structure, other adjustments might be required |
+
 
