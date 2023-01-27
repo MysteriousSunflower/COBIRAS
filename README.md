@@ -6,7 +6,7 @@ This repository contains the testbed setup accompanying the paper **COBIRAS: Max
 
 - recent `docker` and `docker-compose` installation, as well as the `bash` shell
 - ~50GB of storage
-- sufficient CPU power to encode AVC encoding up to 1440p with >1x speed (only required if you want to run JITE)
+- sufficient CPU power to encode AVC up to 1440p with >1x speed (only required if you want to run JITE)
   
 ## Terminology
 
@@ -62,7 +62,7 @@ While in the current state this setup renders the test data from the mentioned p
 |                                  |                                                                                                                                                                                                                                                                                                                   |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Change network traces                      | Edit path of network traces in `exec_setup.sh:15`                                                                                                                                                                                                                                                                 |
-| Use different video                        | Create DASH segments for all video representations. Put them in a directory in `DASH-setup/server/data/public/videos/`. Edit video list in `exec_setup.sh:17`. If you want to use JITE, the node.js server must be adjusted accordingly. Depending on our manifest structure, other adjustments might be required |
+| Use different video with arbitrary representation count | Create DASH segments for all video representations. Put them in a directory in `DASH-setup/server/data/public/videos/`. Edit video list in `exec_setup.sh:17`. If you want to use JITE, the node.js server must be adjusted accordingly. Depending on our manifest structure, other adjustments might be required |
 | Only run specific/different ABR algorithm | Edit ABR algorithm list in `exec_setup.sh:18`                                                                                                                                                                                                                                                                               |
 | Run only JITE                              | Edit video list in `exec_setup.sh:17`. JITE can be identified by `_runtime` in the video name. `_pre` refers to ManyReps (perfect JITE, all representations are pre-encoded)                                                                                                                                                      |
 
