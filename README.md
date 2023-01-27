@@ -16,6 +16,7 @@ The paper uses a slightly different terminology from the code in this repository
   - FewReps (DASH system with a discrete set of 6 representations) <--> default
   - ManyReps (DASH system with a discrete set of 49 representations, used to approximate a continuous bit rate slide, representations are pre-encoded) <--> pre
   - ManyReps JITE (DASH system with a discrete set of 49 representations, used to approximate a continuous bit rate slide, representations are encoded just-in-time during runtime) <--> runtime
+> Note that we use this approximation for practical reasons, as it is not possible to implement a fully continuous bit rate slide without major modifications to standard [dash.js](https://github.com/Dash-Industry-Forum/dash.js/) and DASH manifests.
 - ABR algorithms
   - MinOff (ABR algorithm for minimizing off-phases) <--> custom (abrCustom/customBufferRule)
 
