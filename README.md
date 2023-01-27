@@ -35,7 +35,7 @@ Change directory to `prepare-video-files/` and execute the `prepare_video_files.
 
 ### Running the Testbed
 
-Change directory to `DASH-setup/` and executing the `exec_setup.sh` script:
+Change directory to `DASH-setup/` and execute the `exec_setup.sh` script:
   ```
   cd DASH-setup
   bash exec_setup.sh
