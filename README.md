@@ -48,9 +48,9 @@ The script will create three Docker containers via the `docker-compose.yml` file
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
-| Code of ABR MinOff           | `DASH-setup/server/data/public/javascripts/customBufferRule.js` |
 | Network traces               | `DASH-setup/netem/data/trace_files`                             |
 | dash.js player configuration | `DASH-setup/server/data/public/javascripts/player.js`           |
+| Code of ABR MinOff           | `DASH-setup/server/data/public/javascripts/customBufferRule.js` |
 | node.js web server           | `DASH-setup/server/data/app.js`                                 |
 | Logs of past runs            | `DASH-setup/logs/<ABR>/`                                        |
 
