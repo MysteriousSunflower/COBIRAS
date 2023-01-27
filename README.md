@@ -23,8 +23,9 @@ The paper uses a slightly different terminology from the code in this repository
 
 ### Prepare Video Files
 
-- cd to `prepare-video-files/` and execute the `prepare_video_files.sh` script:
+Change directory to `prepare-video-files/` and execute the `prepare_video_files.sh` script:
   ```
+  cd prepare-video-files
   bash prepare_video_files.sh
   ```
   The script will download the Tears of Steel (ToS) video in 4k quality (about 6.3GB) from an official mirror and encodes it to 49 different representations. Six of the representations will be used for the FewReps DASH runs (default), while the additional 43 representations will be used in the ManyReps DASH runs (pre), simulating continuous quality levels. The representations will be dashed and moved to folders in the `DASH-setup` directory. You can gather detailed ffmpeg encoding settings from the `encode()` function, as well as MP4Box dash settings from the `dash()` function.
@@ -34,13 +35,11 @@ The paper uses a slightly different terminology from the code in this repository
 
 ### Running the Testbed
 
-The testbed can be executed by running the `exec_setup.sh` in the `DASH-setup` directory:
-
+Change directory to `DASH-setup/` and executing the `exec_setup.sh` script:
   ```
   cd DASH-setup
   bash exec_setup.sh
   ```
-
 The script will create three Docker containers via the `docker-compose.yml` file and the Dockerfiles in the `client/`, `netem/` and `server/` directories. Then it will start playing the Tears Of Steel video on different network traces for different ABR algorithms and streaming configurations. A run with the ToS video on a network trace takes about 15 minutes, logged metrics will be saved in the `logs/` directory, grouped by the ABR algorithm used.
 
 ## Configuration
