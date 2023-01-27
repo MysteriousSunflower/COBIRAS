@@ -15,7 +15,7 @@ vid_timeout=1100
 traces=($(ls netem/data/trace_files))
 
 for video in 'ToS_default/playlist.mpd' 'ToS_pre/playlist.mpd' 'ToS_runtime/playlist.mpd'; do
-  for abr in 'abrDynamic' 'abrThroughput' 'abrBola' 'abrL2A' 'abrLoLP' 'abrCustom'; do
+  for abr in 'abrDynamic' 'abrThroughput' 'abrBola' 'abrL2A' 'abrCustom'; do
     for trace in "${traces[@]}"; do
       run_var=${trace:0:-4}"_"${video:0:-13}
 
