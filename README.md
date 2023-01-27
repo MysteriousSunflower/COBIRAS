@@ -32,9 +32,9 @@ The paper uses a slightly different terminology from the code in this repository
 > There is a `cleanup.sh` file, which can be used to clear the `prepare-video-files` directory.
 > Depending on your machine's compute power the encoding can take a while.
 
-### Running
+### Running the Testbed
 
-The testbench can be executed by running the `exec_setup.sh` in the `DASH-setup` directory:
+The testbed can be executed by running the `exec_setup.sh` in the `DASH-setup` directory:
 
   ```
   cd DASH-setup
@@ -43,7 +43,9 @@ The testbench can be executed by running the `exec_setup.sh` in the `DASH-setup`
 
 The script will create three Docker containers via the `docker-compose.yml` file and the Dockerfiles in the `client/`, `netem/` and `server/` directories. Then it will start playing the Tears Of Steel video on different network traces for different ABR algorithms and streaming configurations. A run with the ToS video on a network trace takes about 15 minutes, logged metrics will be saved in the `logs/` directory, grouped by the ABR algorithm used.
 
-### Locations
+## Configuration
+
+### Default Locations
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
@@ -53,7 +55,7 @@ The script will create three Docker containers via the `docker-compose.yml` file
 | node.js web server           | `DASH-setup/server/data/app.js`                                 |
 | Logs of past runs            | `DASH-setup/logs/<ABR>/`                                        |
 
-## Configuration
+### Changing the Configuration
 
 While in the current state this setup renders the test data from the mentioned paper, it can easily be adjusted to run different DASH configurations, testdata and network traces.
 
